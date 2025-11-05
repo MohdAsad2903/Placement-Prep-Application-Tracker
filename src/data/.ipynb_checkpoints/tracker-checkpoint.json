@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "version": 1
+  },
+  "applications": [
+    {
+      "Id": 1,
+      "Company": "TCS",
+      "Role": "Data Analyst",
+      "Location": "Chennai",
+      "Source": "Portal",
+      "Staus": "TECH1",
+      "Deadline": "2025-11-25"
+    },
+    {
+      "Id": 2,
+      "Company": "Zoho",
+      "Role": "Backend Intern",
+      "Location": "Chennai",
+      "Source": "Referral",
+      "Staus": "APPLIED",
+      "Deadline": ""
+    },
+    {
+      "Id": 3,
+      "Company": "SolarWinds",
+      "Role": "Data Engineer",
+      "Location": "Bengaluru",
+      "Source": "Portal",
+      "Staus": "ONLINE_TEST",
+      "Deadline": "2025-12-05"
+    },
+    {
+      "Id": 4,
+      "Company": "Rystad",
+      "Role": "Data Analyst",
+      "Location": "Chennai",
+      "Source": "Campus",
+      "Staus": "APPLIED",
+      "Deadline": "2025-11-30"
+    },
+    {
+      "Id": 5,
+      "Company": "10x Construct",
+      "Role": "ML Engineer",
+      "Location": "Bengaluru",
+      "Source": "Referral",
+      "Staus": "APPLIED",
+      "Deadline": "2025-12-10"
+    }
+  ],
+  "tasks": [
+    {
+      "Id": 1,
+      "Topic": "Python",
+      "Subtopic": "Lists & Loops",
+      "Due_date": "2025-11-15",
+      "Status": "TODO",
+      "Notes": "Milestone-1 recap"
+    },
+    {
+      "Id": 2,
+      "Topic": "SQL",
+      "Subtopic": "Joins & GroupBy",
+      "Due_date": "2025-11-18",
+      "Status": "TODO",
+      "Notes": ""
+    },
+    {
+      "Id": 3,
+      "Topic": "DSA",
+      "Subtopic": "Sliding Window",
+      "Due_date": "2025-11-20",
+      "Status": "TODO",
+      "Notes": ""
+    }
+  ]
+}

@@ -27,7 +27,7 @@ def _parse_date(d:str)->Optional[date]:
 
 @dataclass
 class Applications:
-    id:int
+    Id:int
     Company:str
     Role:str
     Location:str=""
@@ -36,9 +36,9 @@ class Applications:
     Status:Statuses=Statuses.APPLIED
 
     def update_status(self,new_Status:str)->None:
-        s=new_status.strip().upper()
+        s=new_Status.strip().upper()
         if s not in Statuses.__members__:
-            raise valueError(f'Invalid Status: {new_status}')
+            raise valueError(f'Invalid Status: {new_Status}')
         self.Status=Statuses[s]
 
     def days_left(self)->Optional[int]:
@@ -52,7 +52,7 @@ class Applications:
     @staticmethod
     def from_dict(d:Dict[str,Any])->"Application":
         return Applications(
-            id=int(d["id"]),
+            Id=int(d["Id"]),
             Company=d["Company"],
             Role=d["Role"],
             Location=d.get("Location",""),
@@ -64,7 +64,7 @@ class Applications:
 
 @dataclass
 class Preparation:
-    id:int
+    Id:int
     Topic:str
     Subtopic:str
     Due_date:str=""
@@ -85,7 +85,7 @@ class Preparation:
     @staticmethod
     def from_dict(d:Dict[str,Any])->"Preparation":
         return Preparation(
-            id=int(d["id"]),
+            Id=int(d["Id"]),
             Topic=d["Topic"],
             Subtopic=d["Subtopic"],
             Due_date=d.get("Due_date",""),
